@@ -1,0 +1,18 @@
+.bg-light-custom {
+  background-color: #f8f9fa;
+  padding-top: 8px;
+  padding-bottom: 8px;/*padding: 0.5rem 1rem;padding order: top-bottom left-right,0.5rem = 8px (top and bottom),1rem = 16px (left and right)*/
+  padding-right: 16px;
+  padding-left: 16px;
+ }
+#home {
+  display: none;
+}
+.para1{
+  padding: 20px;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+#about{
+  display: none;
+}

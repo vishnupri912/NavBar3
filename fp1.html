@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Top-Left Navbar</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    crossorigin="anonymous"
+  />
+  <!-- Font Awesome (Optional for icons) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="fp.css" />
+</head>
+<body>
+
+<!-- ✅ Toggle button at top-left -->
+<nav class="navbar bg-light-custom fixed-top">
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarContent"
+    aria-controls="navbarContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <!-- 👇 This will show 3-line icon -->
+    <i class="fas fa-bars fa-lg"></i>
+  </button>
+</nav>
+
+<!-- ✅ Collapsible menu content -->
+<div class="collapse" id="navbarContent">
+  <div class="bg-light p-4">
+    <h5 class="text-dark">Menu</h5>
+    <ul class="nav flex-column">
+      <li class="nav-item"><a class="nav-link" href="#home" onclick="showHome()">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="#about" onclick="showAbout()">About</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Info</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+    </ul>
+  </div>
+</div>
+<div class="mt-5 pt-3 text-center">
+  <h1>Pure CSS Hamburger Menu</h1>
+</div>
+<div id="home">
+  <h3 class="pl-3">Home</h3>
+  <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam debitis veniam, ab amet sint eos corporis corrupti accusantium incidunt, tenetur quas perferendis reprehenderit in commodi, ea culpa praesentium aperiam sequi.</p>
+</div>
+<div id="about">
+  <h3 class="pl-3">About</h3>
+  <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam debitis veniam, ab amet sint eos corporis corrupti accusantium incidunt, tenetur quas perferendis reprehenderit in commodi, ea culpa praesentium aperiam sequi.</p>
+</div>
+<!-- ✅ Bootstrap JS dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>
